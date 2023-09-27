@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sathvika-rao/dnb-config-repo.git
+          username: sathvika-rao
+          password: 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
+          clone-on-start: true #should immediately create the clone of the guthub repository in the local one
+          skip-ssl-validation: true
+    
+server:
+  port: 8888
+  
